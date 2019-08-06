@@ -18,9 +18,10 @@ What this provides:
   2. Copy these files into the new directory.
   3. Edit `DEPLOY_README`: Add/remove sections based on your code's needs.
      Lines with chevrons ("`>>>>`" and "`<<<<`") provide guidance instructions and should be edited out.
-  4. Run `pip freeze -r requirements-example.txt > requirements.txt`.
-  5. Clean up `requirements.txt` by removing packages for which you don't need to track their versions. You can edit `requirements-example` before running step 4. to make them easier to identify (packages listed therein will appear first).
-  6. Delete `README` (this file) and `requirements-example.txt`.
+  4. Run `pip freeze -r requirements-template.txt > requirements.txt`.
+  5. Clean up `requirements.txt` by removing packages for which you don't need to track their versions. You can edit `requirements-template` before running step 4. to make them easier to identify (packages listed therein will appear first).
+  6. Delete `README` (this file). You may also want to delete `requirements-template.txt`.
+  7. Rename `DEPLOY_README` to `README`.
   7. Deploy (via zip file, GitHub repository, etc.)
   
   
