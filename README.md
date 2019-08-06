@@ -14,12 +14,12 @@ What this provides:
 
 # How to use this template
 
-  1. Create a new directory. Give it a name like "ProjectY-Container"
+  1. Create a new directory. Give it a name like "ProjectY-container"
   2. Copy these files into the new directory.
   3. Edit `DEPLOY_README`: Add/remove sections based on your code's needs.
      Lines with chevrons ("`>>>>`" and "`<<<<`") provide guidance instructions and should be edited out.
-  4. Run `pip freeze -r requirements-template.txt > requirements.txt`.
-  5. Clean up `requirements.txt` by removing packages for which you don't need to track their versions. You can edit `requirements-template` before running step 4. to make them easier to identify (packages listed therein will appear first).
+  4. Run `pip freeze -r requirements-template.txt > requirements.txt` from within the container directory.
+  5. Clean up `requirements.txt` by removing packages for which you don't need to track their versions. You can edit `requirements-template` before running step 4 to make them easier to identify (packages listed therein will appear first).
   6. Delete `README` (this file). You may also want to delete `requirements-template.txt`.
   7. Rename `DEPLOY_README` to `README`.
   7. Deploy (via zip file, GitHub repository, etc.)
@@ -48,6 +48,6 @@ But more importantly, putting project-specific code on PyPI doesn't make much se
 
   - If I want to send updated code to a collaborator, he shouldn't have to wait for the PyPI index to update.
   - I want to be able to share development versions to collaborators without making them public.
-  - A PyPI package doesn't solve problem 2. above.
-  - When I do want to share the code publicly, it is *frozen*: I will never update it, and so don't need the version management provided by `pip`.
+  - A PyPI package doesn't solve problem 2 above.
+  - When I do want to share the code publicly, it is *frozen*: I will never update it, and so don't need the version management provided by `pip` (c.f. problem 3).
   - If a new PyPI package was created for every computational paper, the index would quickly become a mess.
