@@ -1,47 +1,39 @@
-mackelab
+# Sinn stack
+mackelab-toolbox
 sinn
 theano_shim
+smttask
 
-pymc3
+# Sumatra stack
 parameters
 sumatra
-
-click
-cycler
-dill
-Django
-django-tagging
-entrypoints
 GitPython
-graphviz
-h5py
-html5lib
+psycopg2
+PyYAML
+
+# Numerical stack
+numpy
+scipy
+matplotlib
+seaborn
+pandas
+mpmath
+sympy
+
+# Jupyter stack
+jupyter
+jupyterlab
+qtconsole
+
+# IPython stack
 ipykernel
 ipython
 ipywidgets
-Jinja2
-joblib
-jsonpickle
-jupyter
-matplotlib
-mpmath
-numpy
-odictliteral
-pandas
-psycopg2
-pydot-ng
-pyparsing
-pyperclip
-PyQt5
-PyQt5-sip
-PyYAML
-qtconsole
-scipy
-simpleeval
-simplegeneric
-sip
-six
-sympy
-terminado
-tornado
+
+# Bayesian inference stack
+pymc3
+
+# Utilities
 tqdm
+odictliteral
+simpleeval
